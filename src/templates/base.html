@@ -198,74 +198,8 @@
                 </div>
             </div>
         </div>
-        <div class="account">
-            <div class="phone">
-                <p> ВЕРИФИКАЦИЯ ТЕЛЕФОНА*</p><br>
-                <input class="input" type="text" placeholder="Ваш номер">
-            </div>
-            <div class="contact">
-                <p>КОНТАКТНАЯ ИНФОРМАЦИЯ</p><br>
-                <input class="input" type="text" placeholder="Имя*">
-                <input class="input" type="text" placeholder="Фамилия*">
-            </div>
-            <div class="all">
-                <div class="card">
-                    <p>СПОСОБЫ ОПЛАТЫ*</p>
-                    <div class="sum">
-                        <h2> Наличный расчет </h2>
-                        <h4>Оплата принимается в узбекских сумах в наших магазинах или курьеру при получении
-                            товара.</h4>
-                        <input class="radio" id="1" value="Наличный" type="checkbox">
-                    </div>
-                </div>
-                <div class="card">
-                    <p>СПОСОБЫ ОПЛАТЫ*</p>
-                    <div class="sum">
-                        <h2> Оплата по терминалу </h2>
-                        <h4>Оплата принимается через банковские карты UzCard.</h4>
-                        <input class="radio" id="1" value="терминал" type="checkbox">
-                    </div>
-                </div>
-            </div>
+        {% block content %}
 
-            <div class="div">
-                <p>«Адрес, Ориентир»*</p>
-                <textarea class="text" name="" id="" cols="30" rows="10"></textarea>
-
-            </div>
-        </div>
-        <div class="gamburger">
-            <div class="modal">
-                <div class="title">Заказы</div>
-                <button class="close" onclick="modal()"><span></span></button>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="item">
-                            <div class="box">
-                                <div class="box__img"><img class="img" src="assets/img/burger.png" alt=""></div>
-                                <div class="box__content">
-                                    <div class="box__title"> Double Burger</div>
-                                    <div class="box__text"> Горячая закуска с митболами из говядины, томатами,
-                                        моцареллой и соусом чипотле
-                                    </div>
-                                    <div class="box__const">
-                                        <div class="box__cost"> 23,000 UZS</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="total">
-                    <div class="title">Итого:</div>
-                    <div class="cost">23,500 <span>UZS</span></div>
-                </div>
-                <div class="buttons">
-                    <button class="clear"><a href="index.html"> Очистить</a></button>
-                    <button class="order"><a href="order.html">Заказать</a></button>
-                </div>
-            </div>
-            <div class="button">
-                <a href="#">Отправить</a>
-            </div>
-        </div>
+        {% endblock %}
+</body>
+</html>
