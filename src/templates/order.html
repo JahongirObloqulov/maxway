@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 <div class="mobMenu">
@@ -60,7 +61,7 @@
             <button class="main"><span></span></button>
         </div>
         <div class="mobMenu__content">
-            <div class="mobMenu__content--img"><img src="assets/img/bitmap.png" alt=""></div>
+            <div class="mobMenu__content--img"><img src="{% static 'img/bitmap.png' %}" alt=""></div>
             <div class="mobMenu__content--decs">
                 <div class="mobMenu__content--title">Siz izlagan mazzali ta’mlar</div>
                 <div class="mobMenu__content--text">When an unknown printer took a galley of type scrambled it to make a
@@ -242,7 +243,7 @@
                     <div class="col-12">
                         <div class="item">
                             <div class="box">
-                                <div class="box__img"><img class="img" src="assets/img/burger.png" alt=""></div>
+                                <div class="box__img"><img class="img" src="{% static 'img/burger.png' %}" alt=""></div>
                                 <div class="box__content">
                                     <div class="box__title"> Double Burger</div>
                                     <div class="box__text"> Горячая закуска с митболами из говядины, томатами,
@@ -261,8 +262,8 @@
                     <div class="cost">23,500 <span>UZS</span></div>
                 </div>
                 <div class="buttons">
-                    <button class="clear"><a href="index.html"> Очистить</a></button>
-                    <button class="order"><a href="order.html">Заказать</a></button>
+                    <button class="clear"><a href="{% url 'index' %}"> Очистить</a></button>
+                    <button class="order"><a href="{% url 'order' %}">Заказать</a></button>
                 </div>
             </div>
             <div class="button">
